@@ -1,0 +1,14 @@
+import json
+import csv
+
+with open("datos.txt", "w") as f:
+    f.write("Hola desde Python")
+   
+data = {"nombre": "Mauricio", "canal": "aspdev"}
+json.dump(data, open("datos.json", "w"))
+
+writer = csv.writer(open("datos.csv", "w", newline=""))
+writer.writerow(["Nombre", "Edad"])
+
+with open("datos.sql", "w") as f:
+    f.write("INSERT INTO usuarios(nombre) VALUES ('Mauricio');")
