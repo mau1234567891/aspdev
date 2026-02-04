@@ -26,7 +26,7 @@ void setup() {
   Serial.begin(115200);
 
   tft.begin();
-  tft.setRotation(1);
+  tft.setRotation(3);
   tft.fillScreen(ILI9341_BLACK);
 
   for (int i=0;i<largo;i++){
@@ -78,3 +78,4 @@ void loop() {
 
   delay(120);
 }
+
